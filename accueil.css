@@ -1,0 +1,510 @@
+:root {
+    --bleu-fonce:#021740;
+    --bleu-roi:#07338c;
+    --blanc: #FFFFFF;
+    --violet:#9E91B7;
+    --violte-fonce:#3D2DA6;
+    --mySoftPink : #F2CEF2 ;
+    --mySoftViolet : #9E91B7 ;
+    --myPink : #DF99F2 ;
+    --myViolet: #3D2DA6;
+    --myBlue : #07338C;
+    --myDarkBlue:#021740;
+}
+@font-face {
+    font-family: "Panthera";
+    src: url(assets/Police/Panthera/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: "Wakanda";
+    src: url(assets/Police/Wakanda/WakandaFanther-JRpp7.ttf);
+}
+@font-face {
+    font-family: "Beyno";
+    src: url(assets/Police/Beyno/._BEYNO.ttf);
+}
+@font-face {
+    font-family: "Cantarell";
+    src: url(assets/Police/Cantarell/Cantarell-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,rgba(2, 23, 64, 0) 100%);
+    color: var(--blanc);
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+p{
+    font-size: 10px;
+    font-family: "Cantarell";
+
+}
+
+.left-bar1{
+    height: 400px;
+    border-left: var(--violet) 3px solid;
+    position: fixed;
+    left:2.5%;
+}
+.left-bar2{
+    height: 280px;
+    border-left: var(--violet) 3px solid;
+    position: fixed;
+    left:4%;
+}
+.social-tete {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 290px;
+    left: 3.3%;
+}
+/*Design de la partie navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--blanc);
+}
+.menu {
+    display: flex;
+    gap:35px;
+    font-family: "Beyno";
+    font-size: 15px;
+}
+.logo-header img {
+    width: 100px;
+}
+.accueil a {
+    color: var(--violet);
+    text-decoration: underline;
+}
+/*Design de la première section*/
+.panther {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.panther .description {
+    padding-top: 170px;
+    padding-left: 40px;
+    margin-left: 7.5%;
+}
+.panther .photo-panther img {
+    width: 810px;
+}
+h1 {
+    font-family: "Panthera";
+    font-size: 48px;
+    color: var(--violet);
+    font-weight: lighter;
+}
+.panther h2 {
+    font-family: "Beyno";
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: var(--violet);
+}
+.voir a{
+    color: var(--blanc);
+    font-size: 13px;
+    
+}
+.panther.voir{
+    padding-top: 20px;
+}
+/*Design de la partie personnage*/
+
+#personnage .content {
+    display: flex;
+    margin-left: 7.5%;
+    background-color: var(--bleu-fonce);
+    height: 250px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+#personnage .image {
+    height: 250px;
+}
+
+#personnage h3{
+    font-family: "Beyno";
+    font-weight: lighter;
+    color: var(--violet);
+    font-size: 18px;
+}
+#personnage .description{
+    padding: 30px 20px;
+}
+#personnage p{
+    margin-top:10px ;
+}
+
+#personnage .content:hover{
+    transform: scale(110%);
+}
+
+
+/*Design de la partie description de black panther*/
+.panther-content {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#panther h3 {
+    font-family: "Beyno";
+    color: var(--violet);
+    margin: 18px 0;
+    font-weight: lighter;
+}
+#panther .panther-descri{
+    text-align: justify;
+    margin-top: 30px;
+}
+#panther p{
+    margin: 18px 0;
+    font-weight: lighter;
+}
+#panther ul {
+    font-size: 10px;
+    font-family: "Cantarell";
+    margin-bottom: 10px;
+    margin-top: -15px;
+    list-style-type:"- ";
+    padding-left: 5px;
+}
+#panther .profile {
+    width: 60%;
+    margin: 0 auto;
+}
+#panther .panther-img {
+    width: 280px;
+    position: absolute;
+    top: 980px;
+    left: 850px;
+    z-index: 1;
+}
+.profile-content {
+    background-color: var(--blanc);
+    height: 520px;
+    width: 350px;
+    padding: 0 55px;
+    border-radius: 10px;
+    position: absolute;
+    top: 1200px;
+    left: 813px;
+    padding-top: 190px;
+    line-height: 10px;
+}
+#panther h4{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+#panther nav a{
+    display: flex;
+    padding: 10px 12px;
+    background-color: var(--violte-fonce);
+    color: var(--blanc);
+    text-decoration: none;
+    justify-content: center;
+    font-size: 9px;
+    border-radius: 5px;
+}
+#panther .profile p {
+    color: var(--bleu-fonce);
+    font-weight:900;
+    font-size: 12px;
+    
+}
+
+#panther span {
+    color: var(--bleu-roi);
+}
+#panther .parenthèse{
+    font-size: 10px;
+}
+#panther .panther-img2 {
+    position: absolute;
+    top: 1780px;
+    width: 350px;
+    left: 825px;
+}
+
+/* SECTION 4 : Formulaire */
+.formulaire {
+    background: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.formulaire__forme {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85) 15%, rgba(255, 255, 255, 0.08));
+    margin: 130px 0 75px;
+    padding: 20px;
+    width: 50%;
+    border-radius: 100px ;
+    border: none;
+    text-align: center;
+
+    }
+
+.formulaire__forme p,
+.formulaire__forme h2  {
+    color: black;
+    text-align: center;
+    font-family: cantarell;
+    margin: 0;
+}
+
+.formulaire__forme h2  {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.formulaire__forme p{
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+/* Formatage des input et textarea du formulaire */
+.formulaire__forme input {
+    width: 70%;
+    height: 40px;
+    border-radius: 38px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: solid rgba(0, 0, 0, 0.5) 1px;
+}
+
+.formulaire__forme input,
+.formulaire__forme textarea {
+    margin: 5px 0;
+}
+
+textarea {
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 38px;
+    background-color: transparent;
+    border: solid rgba(0, 0, 0, 0.5) 1px;
+}
+
+.formulaire__forme input::placeholder,
+.formulaire__forme textarea::placeholder {
+    color: black;
+    font-family: cantarell;
+}
+
+/* Media queries*/
+@media screen and (max-width: 600px) {
+    .formualire__forme input {
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+
+    .formualire__forme textarea {
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+}
+
+/* Boutons submit du formulaire */
+.formulaire__forme button {
+    
+    width: 125px;
+    height: 40px;
+    border: none;
+    border-radius: 38px;
+    background-color: var(--mySoftPink);
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.submitBtn:hover {
+    filter: drop-shadow(0 0 10px var(--mySoftPink)) ;
+}
+
+/* Popup Box avec un peu de JavaScript*/
+#popupBox {
+    display: none;
+    padding: 20px;
+    background-color:#3d2da691;
+    color: white;
+    margin: 15px;
+    border-radius: 38px;
+  }
+  
+  /* Popup Box button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+
+
+/* FOOTER */
+/* Typographie du footer */
+.footerDiv p, 
+.footerDiv a,
+.footerDiv li {
+    font-family: Cantarell;
+    font-size: 10px;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+footer h3 {
+    font-family: Cantarell;
+    font-size: 14px; 
+    letter-spacing: 3px;
+    margin: 5px 0 10px;
+}
+
+footer {
+    background: url(../assets/Illustrations_Logo/All_pages/back_footer.png) no-repeat;
+    background-size: 100% 100%;
+    border: solid 1px transparent;
+}
+
+.footerDiv {
+    margin: 200px 10% 50px;
+}
+
+/* Media queries pour les petites écrans */
+@media screen and (max-width: 700px) {
+    .footerDiv {
+        margin: 100px 10px 50px;
+    }
+
+    .findUs figure{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .findUs img {
+        width: 5vw;
+    }
+    
+}
+
+/* grille */
+.footerDiv {
+    display: grid;
+    grid-template-areas: 
+        "logo logo pages findUs"
+        "logo logo pol pol";
+    gap: 15px;
+}
+
+/* Media Query */
+@media screen and (max-width: 400px) {
+    .footerDiv {
+        display: grid;
+        grid-template-areas: 
+            "logo logo"
+            "pages findUs" 
+            "pol pol";
+        gap: 15px;
+    }
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.pages {
+    grid-area: pages;
+}
+
+.findUs {
+    grid-area: findUs;
+}
+
+.pol {
+    grid-area: pol;
+}
+
+/* élément du footer */
+.logo {
+display: flex;
+justify-content: center;
+}
+
+.logo-img {
+    width: 25vw;
+    height: 25vw;
+    min-width: 150px;
+    min-height: 150px;
+    background: url(../assets/Illustrations+Logo/All_pages/footer1.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo-image {
+    position: relative;
+    right: 2vw;
+    width: 12vw;
+    min-width: 75px;
+}
+
+.logo-img:hover {
+    transform: scale(110%);
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.nous {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.nous img {
+    max-width: 60px;
+    margin: 0 5px;
+}
+
+.nous img:hover {
+    transform: scale(110%);
+}
+
+.down {
+    display: flex;
+    align-items: center;
+}

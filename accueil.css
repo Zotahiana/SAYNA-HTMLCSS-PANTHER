@@ -13,19 +13,19 @@
 }
 @font-face {
     font-family: "Panthera";
-    src: url(assets/Police/Panthera/PantheraRegular-MVZ9J.ttf);
+    src: url(../Police/Panthera/PantheraRegular-MVZ9J.ttf);
 }
 @font-face {
     font-family: "Wakanda";
-    src: url(assets/Police/Wakanda/WakandaFanther-JRpp7.ttf);
+    src: url(../Police/Wakanda/WakandaFanther-JRpp7.ttf);
 }
 @font-face {
     font-family: "Beyno";
-    src: url(assets/Police/Beyno/._BEYNO.ttf);
+    src: url(../Police/Beyno/._BEYNO.ttf);
 }
 @font-face {
     font-family: "Cantarell";
-    src: url(assets/Police/Cantarell/Cantarell-Regular.ttf);
+    src: url(../Police/Cantarell/Cantarell-Regular.ttf);
 }
 *{
     margin: 0;
@@ -157,7 +157,7 @@ h1 {
 }
 
 
-/*Design de la partie description de black panther*/
+/*Design description de black panther*/
 .panther-content {
     width: 75%;
     margin: 0 auto;
@@ -253,6 +253,12 @@ h1 {
 
 }
 
+.formulaire {
+    background-image: url("assets/Illustrations\ +\ Logo/accueil/pantherhome7.png");
+    height: 800px;
+}
+
+
 .formulaire__forme {
     background-image: linear-gradient(rgba(255, 255, 255, 0.85) 15%, rgba(255, 255, 255, 0.08));
     margin: 130px 0 75px;
@@ -282,7 +288,7 @@ h1 {
     margin: 0 10px;
 }
 
-/* Formatage des input et textarea du formulaire */
+/*textarea du formulaire */
 .formulaire__forme input {
     width: 70%;
     height: 40px;
@@ -371,10 +377,10 @@ textarea {
 
 
 /* FOOTER */
-/* Typographie du footer */
-.footerDiv p, 
-.footerDiv a,
-.footerDiv li {
+
+.footers p, 
+.footers a,
+.footers li {
     font-family: Cantarell;
     font-size: 10px;
     list-style: none;
@@ -395,7 +401,7 @@ footer {
     border: solid 1px transparent;
 }
 
-.footerDiv {
+.footers {
     margin: 200px 10% 50px;
 }
 
@@ -418,7 +424,7 @@ footer {
 }
 
 /* grille */
-.footerDiv {
+.footers² {
     display: grid;
     grid-template-areas: 
         "logo logo pages findUs"

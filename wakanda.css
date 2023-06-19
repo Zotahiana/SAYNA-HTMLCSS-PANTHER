@@ -1,0 +1,218 @@
+:root {
+    --bleu-fonce:#021740;
+    --bleu-roi:#07338c;
+    --blanc: #ffffffe1;
+    --violet:#9E91B7;
+    --violte-fonce:#3D2DA6;
+    --rose-pale:#F2CEF2;
+}
+@font-face {
+    font-family: "Panthera";
+    src: url(assets/Illustrations\ +\ Logo/Police/Panthera/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: "Wakanda";
+    src: url(assets/Illustrations\ +\ Logo/Police/Wakanda/WakandaFanther-JRpp7.ttf);
+}
+@font-face {
+    font-family: "Beyno";
+    src: url(assets/Illustrations\ +\ Logo/Police/Beyno/._BEYNO.ttf);
+}
+@font-face {
+    font-family: "Cantarell";
+    src: url(assets/Illustrations\ +\ Logo/Police/Cantarell/Cantarell-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,rgba(2, 23, 64, 0.753) 100%);
+    color: var(--blanc);
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+p, ul{
+    font-size: 11px;
+    font-family: "Cantarell";
+
+}
+/*Design de la partie navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--blanc);
+}
+.menu {
+    display: flex;
+    gap:35px;
+    font-family: "Beyno";
+    font-size: 15px;
+}
+.logo img {
+    width: 100px;
+}
+.wakanda a {
+    color: var(--violet);
+    text-decoration: underline;
+}
+/*Design section wakanda*/
+.description {
+    background-image: url("assets/Illustrations\ +\ Logo/Wakanda/Pantherwakanda1.png");
+    height: 600px;
+    padding: 220px 150px;
+}
+
+.description h1{
+    font-size: 50px;
+    font-family: "Beyno";
+    padding: 10px 0;
+    font-weight: lighter;
+    color: var(--violet);
+}
+.description .content {
+    width: 600px;
+}
+.description h2{
+    font-family: "Wakanda";
+    font-size: 30px;
+    color: var(--violet);
+}
+
+.description p{
+    padding-top: 30px;
+    width: 300px;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+#story {
+    background-image: url("assets/Illustrations\ +\ Logo/Wakanda/Pantherwakanda2.png");
+    background-size: 1100px;
+    background-repeat: no-repeat;
+    background-position: 100px -60px;
+    padding: 100px 0;
+}
+#story .story-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: justify;
+    gap: 150px;
+}
+#story .stories ,#stories .stories1{
+    width: 1800px;
+}
+#story .img{
+    width: 480px;
+}
+#story h3{
+    font-family: "Beyno";
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 30px 0;
+    color: var(--violet);
+}
+#story p ,#story ul{
+    padding-bottom: 15px;
+}
+#story .video{
+    width: 200px;
+    padding: 50px 0;
+}
+#story ul{
+    list-style-type: "-";
+    padding-top: -15px;
+}
+
+/*design footer*/
+#footer{
+    background-image: url("assets/Illustrations\ +\ Logo/All pages/back_footer.png");
+    height: 500px;
+    margin-top: 150px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+.picture {
+    width: 220px;
+    position: relative;
+    top: 140px;
+    left: 330px;
+}
+.pictures {
+    width: 120px;
+    position: relative;
+    top: 13px;
+    left: 155px;
+}
+.pictures:hover{
+    filter: invert(50%) sepia(100%) saturate(7440%) hue-rotate(239deg) brightness(87%) contrast(100%);
+}
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 140px;
+    left: 300px;
+    width: 500px;
+    justify-content: space-between;
+}
+#footer h3 {
+    font-family: "Cantarell";
+    font-size: 17px;
+    letter-spacing: 5px;
+}
+#footer .pages {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    
+}
+
+#footer .pages a{
+    text-decoration: none;
+    color: var(--blanc);
+    padding: 5px 0;
+    font-weight: lighter;
+}
+#footer .pages a:hover{
+    text-decoration: underline;
+}
+.nous{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.nous img{
+    width: 35px;
+}
+.nous img:hover{
+    transform: scale(1.1);
+}
+.down {
+    position: relative;
+    top: 75px;
+    display: flex;
+    width: 500px;
+    left: 650px;
+    gap: 18px;
+    flex-direction: column;
+}
